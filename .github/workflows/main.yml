@@ -8,3 +8,5 @@ jobs:
               uses: actions/checkout@v4
             - name: maven clean and install
               run: mvn clean install
+            - name: maven test
+              run: mvn test
