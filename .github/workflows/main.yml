@@ -25,3 +25,5 @@ jobs:
               uses: actions/download-artifact@v4
               with:
                 name: build file
+            - name: print what in it
+              run: ls -la
