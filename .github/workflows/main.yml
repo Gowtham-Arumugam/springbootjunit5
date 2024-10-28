@@ -6,10 +6,6 @@ jobs:
         steps:
             - name: download the code
               uses: actions/checkout@v4
-            - name: maven clean and install
-              run: mvn clean 
-            - name: maven test
-              run: mvn test
             - name: maven package
               run: mvn package
             - name: adding atrifatcs
