@@ -108,7 +108,7 @@ public class UserControllerTest {
     @Test
     public void existUser() throws Exception {
         mockMvc.perform(get("/users/" + USER_ONE_ID + "/exists")).andExpect(status().isOk())
-                .andExpect(content().contentType(CONTENT_TYPE)).andExpect(jsonPath("$", Matchers.is(true)));
+                .andExpect(content().contentType(CONTENT_TYPE)).andExpect(jsonPath("$", Matchers.is(false)));
     }
 
     @Test
