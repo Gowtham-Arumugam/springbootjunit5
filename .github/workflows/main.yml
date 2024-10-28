@@ -14,7 +14,7 @@ jobs:
                 name: build file
                 path: target/springbootjunit5.war
             - name: if failed
-              if: failure()
+              if: always()
               run: echo "something went worng...."
     deploy_from_another_machine:
         runs-on: ubuntu-latest
