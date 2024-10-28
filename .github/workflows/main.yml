@@ -19,6 +19,7 @@ jobs:
                 path: target/springbootjunit5.war
     deploy_from_another_machine:
         runs-on: ubuntu-latest
+        needs: get_code
         steps:
             - name: download bulid file
               uses: actions/download-artifact@v4
