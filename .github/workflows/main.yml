@@ -13,7 +13,7 @@ jobs:
             - name: maven package
               run: mvn package
             - name: adding atrifatcs
-              uses: actions/upload-artifacts@v3
+              uses: actions/upload-artifact@v4
               with: 
                 name: build file
                 path: target
