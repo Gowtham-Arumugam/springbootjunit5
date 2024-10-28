@@ -7,4 +7,4 @@ jobs:
             - name: download the code
               uses: actions/checkout@v4
             - name: maven clean and install
-              run: maven clean install
+              run: mvn clean install
