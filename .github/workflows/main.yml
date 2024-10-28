@@ -16,5 +16,5 @@ jobs:
               uses: actions/upload-artifact@v4
               with: 
                 name: build file
-                path: target
+                path: target/springbootjunit5.war
 
